@@ -1,0 +1,166 @@
+<!-- templatemo 379 catalog -->
+<!-- 
+Catalog Template 
+http://www.templatemo.com/preview/templatemo_379_catalog 
+-->
+<!DOCTYPE html>
+<html>
+<head>		
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Preview - Catalog by templatemo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom styles for this template -->
+	<link href="http://getbootstrap.com/examples/offcanvas/offcanvas.css" rel="stylesheet">
+	<link href="templatemo_style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	body {
+    background-color: #78002D;
+}
+    </style>
+
+	<!-- HTML 5 shim for IE backwards compatibility -->
+		<!-- [if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="container logo">
+				<div class="row">
+					<div class="col-md-12"><a href="#"></a></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default" role="navigation"> 
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>					
+				</div>
+
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html#website_templates">Viewing User&nbsp;</a></li>
+                        <li><a href="index.html#mini_templates">PlaceHolder</a></li>
+						<li><a href="index.html#flash_templates">PlaceHolder</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Go</button>
+					</form>					
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</header>
+		<div class="container">
+			<div class="row" id="preview">
+				<div class="row">
+					<div class="col-md-12" id="img_preview">
+                    
+						<h3>Sam Gamer</h3>
+						
+						<a href="images/sam.png" title="Click to see the original size">
+							<img src="images/sam.png" 
+                            	alt="images/sam.png" class="img-responsive" width="840" height="840">
+						</a>	
+                        			
+					</div>
+				</div> 
+				<div class="row">
+					<div class="col-md-12">
+						<div class="item_container">
+									
+									<div class="item">
+										<a href="#templatemo_372_titanium" class="thumbnail">
+											<img src="images/guy.jpeg" alt="Gameplay1">
+											<p class="hideOverflow">
+                                            	<abbr title="1 v 1">1 v 1</abbr>
+                                            </p>
+										</a>
+									</div>
+                                    
+									<div class="item">
+										<a href="#templatemo_378_dragonfly" class="thumbnail">
+											<img src="images/girl.jpg" alt="Gameplay2">
+											<p>1 v 1</p>
+										</a>
+									</div>		
+                                              
+									<div class="item">
+										<a href="#templatemo_375_tech_layer" class="thumbnail">
+											<img src="images/gamerguy.jpg" alt="Gameplay3">
+											<p>1 v 1</p>
+										</a>
+									</div>
+                                    
+									<div class="item">
+										<a href="#templatemo_371_gallery" class="thumbnail">
+											<img src="images/guy2.png" alt="Gameplay4">
+											<p>1 v 1</p>
+										</a>
+									</div>     
+                                                 
+									<div class="item">
+										<a href="#templatemo_370_focus" class="thumbnail">
+											<img src="images/guy3.jpg" alt="Gameplay5">
+											<p>1 v 1</p>
+										</a>
+									</div>
+                                    
+				
+                           
+                
+	
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	    <!-- 
+		http://masonry.desandro.com/
+	    http://desandro.mit-license.org/ 
+		http://stackoverflow.com/questions/17767130/masonry-js-error-uncaught-typeerror-object-object-object-has-no-method-imag
+		Align items in center: https://github.com/desandro/isotope/issues/20
+	    Hiding text overflow: http://stackoverflow.com/questions/15308061/how-to-avoid-text-overflow-in-twitter-bootstrap
+		-->
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>   
+		<script>
+
+			$(document).ready(function(){
+				init_masonry();
+			});
+
+			function init_masonry(){
+				var $container = $('.item_container');
+				$container.imagesLoaded( function(){
+					$container.masonry({
+						itemSelector : '.item',
+						"gutter": 10,
+						isFitWidth: true
+					});
+				});
+
+				var $fcontainer = $('.preview_footer_container');
+
+				$fcontainer.masonry({
+					itemSelector : '.footer_item',
+					"gutter": 10,
+					isFitWidth: true
+				});
+			}
+			
+		</script>		
+	</body>
+</html>
